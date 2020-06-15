@@ -2,21 +2,14 @@ package com.xmwdkk.boothprint;
 
 import android.app.IntentService;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.support.v4.content.ContextCompat;
-import android.util.Log;
 
-import com.xmwdkk.boothprint.base.App;
 import com.xmwdkk.boothprint.print.GPrinterCommand;
-import com.xmwdkk.boothprint.print.PrintPic;
 import com.xmwdkk.boothprint.print.PrintQueue;
 import com.xmwdkk.boothprint.print.PrintUtil;
 import com.xmwdkk.boothprint.printutil.PrintOrderDataMaker;
 import com.xmwdkk.boothprint.printutil.PrinterWriter;
 import com.xmwdkk.boothprint.printutil.PrinterWriter58mm;
 
-import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -114,7 +107,7 @@ public class BtService extends IntentService {
 //            printer.printDrawable(ContextCompat.getDrawable(getApplicationContext(), R.drawable.demo));
 //            printer.getImageByte(ContextCompat.getDrawable(getApplicationContext(), R.drawable.order));
 
-            printer.print("test");
+            printer.print("测试");
             printer.printLineFeed();
 //            printer.printLine();
 //            printer.printLineFeed();
